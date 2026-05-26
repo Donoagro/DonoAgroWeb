@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<title>DonoAgro · Tu campo en el bolsillo</title>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="description" content="DonoAgro — la app para gestionar tu campo desde el celular. Gastos, lotes, hacienda y clima en un solo lugar." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Fraunces:ital,wght@0,400;0,700;0,800;0,900;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="landing.css" />
+</head>
+<body>
+
+<!-- ============ SCROLL PROGRESS ============ -->
+<aside class="scroll-progress" id="scrollProgress">
+  <div class="scroll-progress-track">
+    <div class="scroll-progress-bar" id="scrollBar"></div>
+  </div>
+  <div class="scroll-progress-dots">
+    <a class="scroll-dot" href="#top" data-label="Inicio"></a>
+    <a class="scroll-dot" href="#problema" data-label="El problema"></a>
+    <a class="scroll-dot" href="#inicio" data-label="Tablero"></a>
+    <a class="scroll-dot" href="#lotes" data-label="Lotes"></a>
+    <a class="scroll-dot" href="#ganaderia" data-label="Ganadería"></a>
+    <a class="scroll-dot" href="#clima" data-label="Clima"></a>
+    <a class="scroll-dot" href="#paraquien" data-label="Para quién"></a>
+    <a class="scroll-dot" href="#faq" data-label="FAQ"></a>
+    <a class="scroll-dot" href="#cta" data-label="Sumate"></a>
+  </div>
+</aside>
+
+<!-- ============ WHATSAPP FAB ============ -->
+<a href="https://wa.me/5492954500470?text=Hola!%20Me%20interesa%20DonoAgro" class="wa-fab" target="_blank" rel="noopener" aria-label="Chatear por WhatsApp">
+  <span class="wa-fab-pulse"></span>
+  <svg width="26" height="26" viewBox="0 0 24 24" fill="#fff">
+    <path d="M12 2a10 10 0 0 0-8.5 15.2L2 22l4.9-1.3A10 10 0 1 0 12 2Zm5.8 14.2c-.2.7-1.2 1.3-1.8 1.4-.5.1-1.1.1-1.8-.1-.4-.1-1-.3-1.7-.6a10 10 0 0 1-4-3.6c-.6-.9-1-1.9-1-2.7 0-.9.4-1.4.6-1.5.2-.2.4-.2.6-.2h.4c.1 0 .3 0 .5.4l.7 1.7c.1.2 0 .4 0 .5l-.3.4-.3.3c-.1.1-.2.2-.1.4l.7 1.1a4 4 0 0 0 2 1.7c.3.2.5.1.7-.1l.7-.8c.2-.2.4-.2.6-.1l1.6.7c.2.1.3.1.4.2 0 .2 0 .8-.2 1.4Z"/>
+  </svg>
+  <span class="wa-fab-text">
+    <small>Hablanos por</small>
+    WhatsApp
+  </span>
+</a>
+
+<!-- ============ NAV ============ -->
+<nav class="nav" id="nav">
+  <a href="#top" class="nav-brand" aria-label="DonoAgro">
+    <span class="nav-brand-halo">
+      <img src="img/logo.png" alt="DonoAgro" />
+    </span>
+  </a>
+  <div class="nav-links">
+    <a href="#problema">El problema</a>
+    <a href="#inicio">App</a>
+    <a href="#paraquien">Para quién</a>
+    <a href="#faq">FAQ</a>
+  </div>
+  <a href="#cta" class="nav-cta">Lista de espera</a>
+</nav>
+
+<!-- ============ HERO ============ -->
+<header class="hero" id="top">
+  <div class="hero-bg">
+    <div class="hero-sun"></div>
+    <div class="hero-rows">
+      <svg viewBox="0 0 1440 600" preserveAspectRatio="none">
+        <g stroke="#0A2A14" fill="none" stroke-width="2">
+          <path d="M -100 60  Q 720 0   1540 50"  stroke-opacity="0.22"/>
+          <path d="M -100 110 Q 720 50  1540 100" stroke-opacity="0.26"/>
+          <path d="M -100 160 Q 720 100 1540 150" stroke-opacity="0.30"/>
+          <path d="M -100 215 Q 720 155 1540 205" stroke-opacity="0.34"/>
+          <path d="M -100 275 Q 720 215 1540 265" stroke-opacity="0.40"/>
+          <path d="M -100 340 Q 720 280 1540 330" stroke-opacity="0.46"/>
+          <path d="M -100 410 Q 720 350 1540 400" stroke-opacity="0.54"/>
+          <path d="M -100 485 Q 720 425 1540 475" stroke-opacity="0.62"/>
+          <path d="M -100 565 Q 720 505 1540 555" stroke-opacity="0.70"/>
+        </g>
+      </svg>
+    </div>
+  </div>
+
+  <div class="hero-inner">
+    <div class="hero-copy">
+      <div class="hero-tag">
+        <span class="hero-tag-dot"></span>
+        Próximamente · 2026
+      </div>
+      <h1 class="serif">
+        Tu campo,<br/>
+        en el <em>bolsillo</em>.
+      </h1>
+      <p>
+        DonoAgro es la app pensada para el productor argentino.
+        Gastos, lotes, hacienda y clima — todo en un solo lugar, sin planillas ni vueltas.
+      </p>
+      <div class="hero-actions">
+        <a href="#cta" class="btn-primary">
+          Sumate a la lista
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+            <path d="M5 12h14M13 5l7 7-7 7" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+        <a href="#inicio" class="btn-secondary">Conocer la app</a>
+      </div>
+    </div>
+
+    <div class="hero-phone-wrap">
+      <div class="hero-phone-glow"></div>
+      <img src="img/inicio.png" alt="App DonoAgro" class="hero-phone" />
+    </div>
+  </div>
+
+  <div class="hero-stats">
+    <div>
+      <div class="hero-stat-num"><em>4</em> secciones</div>
+      <div class="hero-stat-label">Todo en una app</div>
+    </div>
+    <div>
+      <div class="hero-stat-num">100<em>%</em> rural</div>
+      <div class="hero-stat-label">Hecho para el campo</div>
+    </div>
+    <div>
+      <div class="hero-stat-num"><em>0</em> planillas</div>
+      <div class="hero-stat-label">Adiós al papel</div>
+    </div>
+  </div>
+
+  <div class="hero-scroll">
+    <span>Scroll</span>
+    <span class="hero-scroll-line"></span>
+  </div>
+</header>
+
+<!-- ============ PROBLEM SECTION ============ -->
+<section class="problem" id="problema">
+  <svg class="problem-bg" viewBox="0 0 1440 800" preserveAspectRatio="none">
+    <g stroke="#1F6B36" fill="none" stroke-width="1.5">
+      <path d="M -100 200 Q 720 140 1540 190"/>
+      <path d="M -100 280 Q 720 220 1540 270"/>
+      <path d="M -100 380 Q 720 320 1540 370"/>
+      <path d="M -100 500 Q 720 440 1540 490"/>
+      <path d="M -100 640 Q 720 580 1540 630"/>
+    </g>
+  </svg>
+  <div class="problem-inner">
+    <div class="problem-head">
+      <div class="problem-kicker reveal">
+        <span class="hero-tag-dot"></span>
+        Por qué la hicimos
+      </div>
+      <h2 class="serif reveal delay-1">Llevar el campo en papelitos <em>no escala</em>.</h2>
+    </div>
+    <div class="problem-grid">
+      <article class="problem-card reveal">
+        <div class="problem-card-num">01</div>
+        <h4>El cuaderno que se pierde</h4>
+        <p>Anotás los gastos del mes en una libreta y a fin de año tenés que adivinar cuánto realmente gastaste en sanidad, combustible o personal.</p>
+      </article>
+      <article class="problem-card reveal delay-1">
+        <div class="problem-card-num">02</div>
+        <h4>"¿Cuántas cabezas hay?"</h4>
+        <p>Querés saber cuántas pesadas tenés en cada lote y tenés que llamar al encargado. Después al peón. Después abrir tres planillas distintas.</p>
+      </article>
+      <article class="problem-card reveal delay-2">
+        <div class="problem-card-num">03</div>
+        <h4>Cinco apps para el clima</h4>
+        <p>Una para la lluvia, otra para heladas, otra para el radar. Y ninguna te da el pronóstico exacto del lote donde está sembrada la soja.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ INTRO ============ -->
+<section class="intro">
+  <div class="intro-kicker">Qué hace la app</div>
+  <h2 class="serif">Cuatro pantallas para llevar <em>toda tu producción</em> al día.</h2>
+  <p>Diseñada con productores reales, simple para usarla a campo abierto y completa para entender tu campo de un vistazo.</p>
+</section>
+
+<!-- ============ FEATURE 1 — INICIO ============ -->
+<section class="feature" id="inicio">
+  <div class="feature-inner">
+    <div class="feature-copy">
+      <div class="feature-num serif reveal">01</div>
+      <div class="feature-kicker reveal delay-1">
+        <span class="feature-kicker-dot"></span>
+        Pantalla principal
+      </div>
+      <h3 class="serif reveal delay-1">Tu tablero <em>del día</em>.</h3>
+      <p class="reveal delay-2">
+        Apenas abrís la app ves los gastos del mes, la cotización del dólar y un pantallazo
+        de tus lotes y hectáreas. Cero menúes — todo a la vista.
+      </p>
+      <ul class="feature-list">
+        <li class="reveal delay-2">
+          <span class="feature-list-ico">$</span>
+          <div class="feature-list-text">
+            <strong>Gastos del mes</strong>
+            <span>En ARS y USD, actualizados al instante</span>
+          </div>
+        </li>
+        <li class="reveal delay-3">
+          <span class="feature-list-ico">◔</span>
+          <div class="feature-list-text">
+            <strong>Cotización del dólar</strong>
+            <span>Oficial, MEP y agro en tiempo real</span>
+          </div>
+        </li>
+        <li class="reveal delay-3">
+          <span class="feature-list-ico">⌂</span>
+          <div class="feature-list-text">
+            <strong>Resumen de lotes</strong>
+            <span>Total de hectáreas y cabezas en un vistazo</span>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="feature-phone-wrap">
+      <div class="feature-phone-accent reveal-phone" style="background: var(--blue);"></div>
+      <img src="img/inicio.png" alt="Pantalla de inicio" class="feature-phone reveal-phone" />
+    </div>
+  </div>
+</section>
+
+<!-- ============ FEATURE 2 — LOTES (reverse) ============ -->
+<section class="feature reverse" id="lotes">
+  <div class="feature-inner">
+    <div class="feature-copy">
+      <div class="feature-num serif reveal">02</div>
+      <div class="feature-kicker reveal delay-1">
+        <span class="feature-kicker-dot"></span>
+        Tus campos
+      </div>
+      <h3 class="serif reveal delay-1">Cada lote, <em>su historia</em>.</h3>
+      <p class="reveal delay-2">
+        Listá todos tus lotes con superficie, cultivo y etapa. Sumá uno nuevo en segundos
+        y entrá al detalle de cada uno para ver más datos.
+      </p>
+      <ul class="feature-list">
+        <li class="reveal delay-2">
+          <span class="feature-list-ico">▤</span>
+          <div class="feature-list-text">
+            <strong>Superficie en hectáreas</strong>
+            <span>Cada lote con su tamaño exacto</span>
+          </div>
+        </li>
+        <li class="reveal delay-3">
+          <span class="feature-list-ico">✿</span>
+          <div class="feature-list-text">
+            <strong>Cultivo y etapa</strong>
+            <span>Siembra, emergencia, floración, cosecha</span>
+          </div>
+        </li>
+        <li class="reveal delay-3">
+          <span class="feature-list-ico">◉</span>
+          <div class="feature-list-text">
+            <strong>Ubicación GPS</strong>
+            <span>Coordenadas para encontrarlo en el mapa</span>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="feature-phone-wrap">
+      <div class="feature-phone-accent reveal-phone" style="background: var(--green-bright);"></div>
+      <img src="img/lotes.png" alt="Pantalla de lotes" class="feature-phone reveal-phone" />
+    </div>
+  </div>
+</section>
+
+<!-- ============ FEATURE 3 — GANADERÍA ============ -->
+<section class="feature" id="ganaderia">
+  <div class="feature-inner">
+    <div class="feature-copy">
+      <div class="feature-num serif reveal">03</div>
+      <div class="feature-kicker reveal delay-1">
+        <span class="feature-kicker-dot"></span>
+        Tu rodeo
+      </div>
+      <h3 class="serif reveal delay-1">Hacienda <em>bajo control</em>.</h3>
+      <p class="reveal delay-2">
+        Llevá el conteo de cabezas por categoría —rodeo, toros, pesadas, corral— y registrá
+        sanidad y caravanas filtrando por lote.
+      </p>
+      <ul class="feature-list">
+        <li class="reveal delay-2">
+          <span class="feature-list-ico">☰</span>
+          <div class="feature-list-text">
+            <strong>Categorías de hacienda</strong>
+            <span>Rodeo, toros, pesadas, corral, terneros</span>
+          </div>
+        </li>
+        <li class="reveal delay-3">
+          <span class="feature-list-ico">+</span>
+          <div class="feature-list-text">
+            <strong>Sanidad y caravanas</strong>
+            <span>Historial de vacunaciones y trazabilidad</span>
+          </div>
+        </li>
+        <li class="reveal delay-3">
+          <span class="feature-list-ico">⇆</span>
+          <div class="feature-list-text">
+            <strong>Movimientos por lote</strong>
+            <span>Sabés dónde está cada categoría</span>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="feature-phone-wrap">
+      <div class="feature-phone-accent reveal-phone" style="background: var(--amber);"></div>
+      <img src="img/ganaderia.png" alt="Pantalla de ganadería" class="feature-phone reveal-phone" />
+    </div>
+  </div>
+</section>
+
+<!-- ============ FEATURE 4 — CLIMA (reverse) ============ -->
+<section class="feature reverse" id="clima">
+  <div class="feature-inner">
+    <div class="feature-copy">
+      <div class="feature-num serif reveal">04</div>
+      <div class="feature-kicker reveal delay-1">
+        <span class="feature-kicker-dot"></span>
+        Pronóstico
+      </div>
+      <h3 class="serif reveal delay-1">El tiempo <em>de tu lote</em>.</h3>
+      <p class="reveal delay-2">
+        Temperatura, lluvia, viento y helada — geolocalizado al lote que elijas.
+        Con radar de lluvia en vivo y pronóstico extendido a 6 días.
+      </p>
+      <ul class="feature-list">
+        <li class="reveal delay-2">
+          <span class="feature-list-ico">◐</span>
+          <div class="feature-list-text">
+            <strong>Radar de lluvia en vivo</strong>
+            <span>Ves dónde está lloviendo en tiempo real</span>
+          </div>
+        </li>
+        <li class="reveal delay-3">
+          <span class="feature-list-ico">✱</span>
+          <div class="feature-list-text">
+            <strong>Pronóstico 6 días</strong>
+            <span>Planificá siembra, cosecha y aplicaciones</span>
+          </div>
+        </li>
+        <li class="reveal delay-3">
+          <span class="feature-list-ico">❄</span>
+          <div class="feature-list-text">
+            <strong>Alerta de heladas</strong>
+            <span>Aviso anticipado para proteger cultivos</span>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="feature-phone-wrap">
+      <div class="feature-phone-accent reveal-phone" style="background: var(--blue);"></div>
+      <img src="img/clima.png" alt="Pantalla de clima" class="feature-phone reveal-phone" />
+    </div>
+  </div>
+</section>
+
+<!-- ============ BEFORE / AFTER ============ -->
+<section class="compare" id="compare">
+  <div class="compare-head">
+    <div class="compare-kicker reveal">Antes vs Después</div>
+    <h2 class="serif reveal delay-1">Del <em>papel</em> al <em>celular</em>.</h2>
+    <p class="reveal delay-2">Cómo cambia tu día a día cuando todo el campo vive en una sola app.</p>
+  </div>
+  <div class="compare-grid">
+    <div class="compare-col compare-before reveal">
+      <span class="compare-col-tag">Antes</span>
+      <h4 class="serif">El método de siempre</h4>
+      <ul>
+        <li><span>✕</span><span>Planillas de Excel en la PC del campo</span></li>
+        <li><span>✕</span><span>Cuadernos con anotaciones del año pasado</span></li>
+        <li><span>✕</span><span>5 apps de clima abiertas al mismo tiempo</span></li>
+        <li><span>✕</span><span>WhatsApp para preguntar al encargado</span></li>
+        <li><span>✕</span><span>Sumar gastos a mano cada fin de mes</span></li>
+        <li><span>✕</span><span>Buscar caravanas en hojas sueltas</span></li>
+      </ul>
+    </div>
+    <div class="compare-arrow reveal delay-1">
+      <div class="compare-arrow-circle">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none">
+          <path d="M5 12h14M13 5l7 7-7 7" stroke="#fff" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </div>
+    </div>
+    <div class="compare-col compare-after reveal delay-2">
+      <span class="compare-col-tag">Con DonoAgro</span>
+      <h4 class="serif">Todo en el bolsillo</h4>
+      <ul>
+        <li><span>✓</span><span>Gastos del mes calculados solos</span></li>
+        <li><span>✓</span><span>Historial de cada lote desde el día uno</span></li>
+        <li><span>✓</span><span>Clima geolocalizado del lote exacto</span></li>
+        <li><span>✓</span><span>Conteo de cabezas siempre actualizado</span></li>
+        <li><span>✓</span><span>Sanidad y caravanas en segundos</span></li>
+        <li><span>✓</span><span>Dólar y cotizaciones al toque</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PERSONAS ============ -->
+<section class="personas" id="paraquien">
+  <div class="personas-head">
+    <div class="compare-kicker reveal">Para quién es</div>
+    <h2 class="serif reveal delay-1">Pensada para <em>cada productor</em>.</h2>
+    <p class="reveal delay-2">Sea cual sea tu actividad, DonoAgro se adapta a la manera en que llevás tu campo.</p>
+  </div>
+  <div class="personas-grid">
+    <article class="persona reveal">
+      <div class="persona-illo a">G</div>
+      <h4 class="serif">Ganadero</h4>
+      <p>Llevás cabezas, categorías y sanidad. Querés saber dónde está cada rodeo, cuándo vacunaste y cuánto pesa el corral antes de mandarlo a feria.</p>
+      <div class="persona-tags">
+        <span class="persona-tag">Rodeo</span>
+        <span class="persona-tag">Sanidad</span>
+        <span class="persona-tag">Caravanas</span>
+        <span class="persona-tag">Pesadas</span>
+      </div>
+    </article>
+    <article class="persona reveal delay-1">
+      <div class="persona-illo b">A</div>
+      <h4 class="serif">Agricultor</h4>
+      <p>Trabajás lotes con soja, maíz, trigo o girasol. Te importa la etapa del cultivo, el clima exacto del lote y el control de gastos por campaña.</p>
+      <div class="persona-tags">
+        <span class="persona-tag">Cultivos</span>
+        <span class="persona-tag">Clima</span>
+        <span class="persona-tag">Gastos</span>
+        <span class="persona-tag">Lotes</span>
+      </div>
+    </article>
+    <article class="persona reveal delay-2">
+      <div class="persona-illo c">M</div>
+      <h4 class="serif">Mixto</h4>
+      <p>Tenés agricultura y ganadería en el mismo campo. Necesitás verlo todo junto: hectáreas sembradas, cabezas por lote, clima y plata.</p>
+      <div class="persona-tags">
+        <span class="persona-tag">Todo en uno</span>
+        <span class="persona-tag">Multi-lote</span>
+        <span class="persona-tag">Resumen</span>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- ============ MAP — HECHO EN ARGENTINA ============ -->
+<section class="map-section" id="mapa">
+  <div class="map-inner">
+    <div class="map-copy">
+      <div class="compare-kicker reveal">Hecho en Argentina</div>
+      <h2 class="serif reveal delay-1">De punta a punta <em>del país</em>.</h2>
+      <p class="reveal delay-2">DonoAgro nace para productores argentinos, hablada en argentino y pensada para los desafíos del campo nuestro — desde la Patagonia hasta el NEA.</p>
+      <div class="map-stats reveal delay-2">
+        <div>
+          <div class="map-stat-num"><em>23</em> provincias</div>
+          <div class="map-stat-label">Cubiertas</div>
+        </div>
+        <div>
+          <div class="map-stat-num"><em>100</em>% local</div>
+          <div class="map-stat-label">Hecha acá</div>
+        </div>
+      </div>
+    </div>
+    <div class="map-vis reveal-phone">
+      <svg class="map-svg" viewBox="0 0 400 580" xmlns="http://www.w3.org/2000/svg">
+        <!-- Stylized Argentina silhouette -->
+        <defs>
+          <linearGradient id="mapFill" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#EDF6EE"/>
+            <stop offset="100%" stop-color="#DCEEDF"/>
+          </linearGradient>
+        </defs>
+        <path d="M 200 20
+                 C 220 25, 235 45, 232 70
+                 C 230 95, 240 115, 248 135
+                 C 256 155, 250 175, 240 195
+                 C 230 215, 245 230, 250 250
+                 C 255 275, 245 290, 235 305
+                 C 225 320, 235 340, 232 360
+                 C 230 380, 215 395, 210 415
+                 C 205 435, 215 450, 208 470
+                 C 200 490, 185 500, 180 515
+                 C 175 530, 178 545, 168 555
+                 C 158 565, 148 555, 142 545
+                 C 138 535, 144 520, 138 510
+                 C 130 495, 140 480, 135 465
+                 C 128 445, 138 425, 130 405
+                 C 122 385, 132 365, 125 345
+                 C 118 325, 130 305, 122 285
+                 C 115 265, 130 245, 122 225
+                 C 115 205, 130 185, 125 165
+                 C 120 145, 138 130, 140 110
+                 C 142 90, 158 75, 165 55
+                 C 172 35, 185 20, 200 20 Z"
+              fill="url(#mapFill)" stroke="#1F6B36" stroke-width="1.5" stroke-opacity="0.3"/>
+
+        <!-- City pins -->
+        <!-- Buenos Aires -->
+        <circle class="map-pin-ring" cx="210" cy="280" r="4"/>
+        <circle class="map-pin" cx="210" cy="280" r="6"/>
+        <text x="222" y="285" font-size="11" font-weight="700" fill="#0F3D20">Buenos Aires</text>
+
+        <!-- Córdoba -->
+        <circle class="map-pin-ring" cx="185" cy="245" r="4" style="animation-delay: 0.4s"/>
+        <circle class="map-pin" cx="185" cy="245" r="6" style="animation-delay: 0.4s"/>
+        <text x="125" y="240" font-size="11" font-weight="700" fill="#0F3D20">Córdoba</text>
+
+        <!-- Santa Fe -->
+        <circle class="map-pin-ring" cx="200" cy="220" r="4" style="animation-delay: 0.8s"/>
+        <circle class="map-pin" cx="200" cy="220" r="6" style="animation-delay: 0.8s"/>
+        <text x="212" y="218" font-size="11" font-weight="700" fill="#0F3D20">Santa Fe</text>
+
+        <!-- Mendoza -->
+        <circle class="map-pin-ring" cx="150" cy="270" r="4" style="animation-delay: 1.2s"/>
+        <circle class="map-pin" cx="150" cy="270" r="6" style="animation-delay: 1.2s"/>
+        <text x="80" y="275" font-size="11" font-weight="700" fill="#0F3D20">Mendoza</text>
+
+        <!-- Tucumán -->
+        <circle class="map-pin-ring" cx="180" cy="155" r="4" style="animation-delay: 1.6s"/>
+        <circle class="map-pin" cx="180" cy="155" r="6" style="animation-delay: 1.6s"/>
+        <text x="192" y="160" font-size="11" font-weight="700" fill="#0F3D20">Tucumán</text>
+
+        <!-- Patagonia -->
+        <circle class="map-pin-ring" cx="170" cy="450" r="4" style="animation-delay: 2.0s"/>
+        <circle class="map-pin" cx="170" cy="450" r="6" style="animation-delay: 2.0s"/>
+        <text x="100" y="455" font-size="11" font-weight="700" fill="#0F3D20">Patagonia</text>
+
+        <!-- Misiones -->
+        <circle class="map-pin-ring" cx="250" cy="140" r="4" style="animation-delay: 2.4s"/>
+        <circle class="map-pin" cx="250" cy="140" r="6" style="animation-delay: 2.4s"/>
+        <text x="262" y="145" font-size="11" font-weight="700" fill="#0F3D20">Misiones</text>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section class="faq" id="faq">
+  <div class="faq-head">
+    <div class="compare-kicker reveal">Preguntas frecuentes</div>
+    <h2 class="serif reveal delay-1">Dudas que <em>seguro tenés</em>.</h2>
+  </div>
+  <div class="faq-list">
+    <div class="faq-item reveal">
+      <button class="faq-q" type="button">
+        <span>¿Cuándo va a estar disponible?</span>
+        <span class="faq-toggle">+</span>
+      </button>
+      <div class="faq-a">
+        <div class="faq-a-inner">
+          Estamos en beta cerrada con un grupo de productores. El lanzamiento abierto es para mediados de 2026 en iOS, y unos meses después en Android. Sumate a la lista de espera y te avisamos antes que a nadie.
+        </div>
+      </div>
+    </div>
+    <div class="faq-item reveal">
+      <button class="faq-q" type="button">
+        <span>¿Cuánto va a salir?</span>
+        <span class="faq-toggle">+</span>
+      </button>
+      <div class="faq-a">
+        <div class="faq-a-inner">
+          Va a haber un plan gratis pensado para productores chicos (hasta cierta superficie y cantidad de cabezas) y planes pagos accesibles con más funcionalidades. El precio final lo anunciamos junto al lanzamiento.
+        </div>
+      </div>
+    </div>
+    <div class="faq-item reveal">
+      <button class="faq-q" type="button">
+        <span>¿Funciona sin internet en el campo?</span>
+        <span class="faq-toggle">+</span>
+      </button>
+      <div class="faq-a">
+        <div class="faq-a-inner">
+          Sí. La app guarda los datos en tu celular y los sincroniza cuando volvés a tener señal. Pensada justamente para los lugares donde la conectividad va y viene.
+        </div>
+      </div>
+    </div>
+    <div class="faq-item reveal">
+      <button class="faq-q" type="button">
+        <span>¿Mis datos son privados?</span>
+        <span class="faq-toggle">+</span>
+      </button>
+      <div class="faq-a">
+        <div class="faq-a-inner">
+          Tus datos son tuyos. No los vendemos, no los compartimos con terceros y los almacenamos cifrados. Vos podés exportarlos o borrarlos cuando quieras.
+        </div>
+      </div>
+    </div>
+    <div class="faq-item reveal">
+      <button class="faq-q" type="button">
+        <span>¿Sirve para cualquier tipo de campo?</span>
+        <span class="faq-toggle">+</span>
+      </button>
+      <div class="faq-a">
+        <div class="faq-a-inner">
+          Sí — agricultura, ganadería o mixto. Si tenés lotes y/o hacienda, te sirve. La app se adapta a tu tipo de producción.
+        </div>
+      </div>
+    </div>
+    <div class="faq-item reveal">
+      <button class="faq-q" type="button">
+        <span>¿Puedo importar lo que ya tengo en planillas?</span>
+        <span class="faq-toggle">+</span>
+      </button>
+      <div class="faq-a">
+        <div class="faq-a-inner">
+          Estamos trabajando en una herramienta de importación desde Excel para que migres todo de un saque. Va a estar lista para el lanzamiento.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CTA ============ -->
+<section class="cta" id="cta">
+  <div class="cta-bg">
+    <svg viewBox="0 0 1440 800" preserveAspectRatio="none" style="position:absolute;inset:0;width:100%;height:100%;">
+      <defs>
+        <radialGradient id="ctaglow" cx="50%" cy="40%" r="50%">
+          <stop offset="0%" stop-color="#2E8B47" stop-opacity="0.5"/>
+          <stop offset="100%" stop-color="#0F3D20" stop-opacity="0"/>
+        </radialGradient>
+      </defs>
+      <rect width="1440" height="800" fill="url(#ctaglow)"/>
+      <g stroke="#0A2A14" fill="none" stroke-width="2">
+        <path d="M -100 540 Q 720 480 1540 530" stroke-opacity="0.30"/>
+        <path d="M -100 590 Q 720 530 1540 580" stroke-opacity="0.34"/>
+        <path d="M -100 645 Q 720 585 1540 635" stroke-opacity="0.40"/>
+        <path d="M -100 705 Q 720 645 1540 695" stroke-opacity="0.46"/>
+        <path d="M -100 770 Q 720 710 1540 760" stroke-opacity="0.54"/>
+      </g>
+    </svg>
+  </div>
+  <div class="cta-inner">
+    <div class="cta-tag reveal">
+      <span class="hero-tag-dot"></span>
+      Lanzamiento próximo
+    </div>
+    <h2 class="serif reveal delay-1">Toda tu producción, <em>una app</em>.</h2>
+    <p class="reveal delay-2">
+      Dejanos tu email y te avisamos apenas DonoAgro esté disponible.
+      Sin spam, solo el aviso de lanzamiento.
+    </p>
+    <form class="cta-form reveal delay-2" onsubmit="event.preventDefault(); handleSubmit(this);">
+      <input type="email" placeholder="tu@email.com" required />
+      <button type="submit">Avisame</button>
+    </form>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <img src="img/logo.png" alt="DonoAgro" />
+    </div>
+    <div class="footer-links">
+      <a href="#problema">El problema</a>
+      <a href="#inicio">App</a>
+      <a href="#paraquien">Para quién</a>
+      <a href="#faq">FAQ</a>
+      <a href="#cta">Contacto</a>
+    </div>
+    <div class="footer-socials">
+      <a href="https://www.instagram.com/donoagro/" target="_blank" rel="noopener" aria-label="Instagram">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+          <rect x="3" y="3" width="18" height="18" rx="5" stroke="#fff" stroke-width="1.8"/>
+          <circle cx="12" cy="12" r="4" stroke="#fff" stroke-width="1.8"/>
+          <circle cx="17.2" cy="6.8" r="1.1" fill="#fff"/>
+        </svg>
+      </a>
+      <a href="https://wa.me/5492954500470?text=Hola!%20Me%20interesa%20DonoAgro" target="_blank" rel="noopener" aria-label="WhatsApp">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="#fff">
+          <path d="M12 2a10 10 0 0 0-8.5 15.2L2 22l4.9-1.3A10 10 0 1 0 12 2Zm5.8 14.2c-.2.7-1.2 1.3-1.8 1.4-.5.1-1.1.1-1.8-.1-.4-.1-1-.3-1.7-.6a10 10 0 0 1-4-3.6c-.6-.9-1-1.9-1-2.7 0-.9.4-1.4.6-1.5.2-.2.4-.2.6-.2h.4c.1 0 .3 0 .5.4l.7 1.7c.1.2 0 .4 0 .5l-.3.4-.3.3c-.1.1-.2.2-.1.4l.7 1.1a4 4 0 0 0 2 1.7c.3.2.5.1.7-.1l.7-.8c.2-.2.4-.2.6-.1l1.6.7c.2.1.3.1.4.2 0 .2 0 .8-.2 1.4Z"/>
+        </svg>
+      </a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div>© 2026 DonoAgro. Hecho en Argentina 🇦🇷</div>
+    <div>Próximamente · iOS · Android</div>
+  </div>
+</footer>
+
+<script>
+  // ============ NAV BG ON SCROLL ============
+  const nav = document.getElementById('nav');
+  const heroSunEl = document.querySelector('.hero-sun');
+  const heroRowsEl = document.querySelector('.hero-rows');
+  const scrollBar = document.getElementById('scrollBar');
+  const scrollProgress = document.getElementById('scrollProgress');
+  const scrollTrack = scrollProgress.querySelector('.scroll-progress-track');
+  const dots = [...document.querySelectorAll('.scroll-dot')];
+
+  // Sections that have a DARK background — used to flip scroll-progress color
+  const darkIds = new Set(['top', 'problema', 'cta']);
+
+  function onScroll() {
+    const y = window.scrollY;
+    const h = document.documentElement.scrollHeight - window.innerHeight;
+
+    // Nav background
+    nav.classList.toggle('scrolled', y > 60);
+
+    // Hero parallax — sun + rows + phone moves at different speeds
+    if (y < window.innerHeight * 1.2) {
+      if (heroSunEl) heroSunEl.style.transform = `translateY(${y * 0.3}px) scale(${1 + y * 0.0003})`;
+      if (heroRowsEl) heroRowsEl.style.transform = `translateY(${y * 0.15}px)`;
+    }
+
+    // Scroll progress bar
+    const pct = Math.min(100, (y / h) * 100);
+    scrollBar.style.height = pct + '%';
+
+    // Find current section to update dots + dark mode
+    const sections = dots.map(d => document.querySelector(d.getAttribute('href')));
+    let activeIdx = 0;
+    sections.forEach((s, i) => {
+      if (!s) return;
+      const top = s.getBoundingClientRect().top;
+      if (top < window.innerHeight * 0.4) activeIdx = i;
+    });
+    dots.forEach((d, i) => d.classList.toggle('active', i === activeIdx));
+
+    // Is the active section dark?
+    const activeSection = sections[activeIdx];
+    const activeId = activeSection ? activeSection.id : '';
+    const isDark = darkIds.has(activeId);
+    scrollTrack.classList.toggle('on-dark', isDark);
+    dots.forEach(d => d.classList.toggle('on-dark', isDark));
+  }
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+
+  // ============ INTERSECTION OBSERVER REVEAL ============
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.classList.add('in');
+        io.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.15, rootMargin: '0px 0px -8% 0px' });
+
+  document.querySelectorAll('.reveal, .reveal-phone').forEach(el => io.observe(el));
+
+  // ============ FAQ ACCORDION ============
+  document.querySelectorAll('.faq-q').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const item = btn.closest('.faq-item');
+      const wasOpen = item.classList.contains('open');
+      // Close all others
+      document.querySelectorAll('.faq-item.open').forEach(i => i.classList.remove('open'));
+      if (!wasOpen) item.classList.add('open');
+    });
+  });
+
+  // ============ FORM SUBMIT ============
+  function handleSubmit(form) {
+    const btn = form.querySelector('button');
+    const input = form.querySelector('input');
+    btn.textContent = '¡Listo!';
+    btn.style.background = 'var(--green-pale)';
+    input.value = '';
+    input.placeholder = 'Te avisamos pronto ✓';
+    setTimeout(() => {
+      btn.textContent = 'Avisame';
+      btn.style.background = '';
+      input.placeholder = 'tu@email.com';
+    }, 3000);
+  }
+</script>
+
+</body>
+</html>

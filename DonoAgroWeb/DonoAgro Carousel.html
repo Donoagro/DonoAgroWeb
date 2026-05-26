@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<title>DonoAgro · Carrusel Instagram</title>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Fraunces:ital,wght@0,400;0,700;0,800;0,900;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<style>
+  html, body { margin: 0; padding: 0; background: #0d1a12; font-family: 'Plus Jakarta Sans', system-ui, sans-serif; }
+  * { box-sizing: border-box; }
+</style>
+
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="root"></div>
+
+<script type="text/babel" src="design-canvas.jsx"></script>
+<script type="text/babel" src="slides.jsx"></script>
+<script type="text/babel">
+const { Cover, Inicio, Lotes, Ganaderia, Clima, CTA } = window.DASlides;
+
+function App() {
+  return (
+    <DesignCanvas title="DonoAgro · Carrusel Instagram" subtitle="6 slides · 1080 × 1080 px (1:1 cuadrado)">
+      <DCSection id="carrusel" title="Carrusel — desliza →">
+        <DCArtboard id="01-portada" label="01 · Portada" width={1080} height={1080}>
+          <Cover />
+        </DCArtboard>
+        <DCArtboard id="02-inicio" label="02 · Inicio" width={1080} height={1080}>
+          <Inicio />
+        </DCArtboard>
+        <DCArtboard id="03-lotes" label="03 · Lotes" width={1080} height={1080}>
+          <Lotes />
+        </DCArtboard>
+        <DCArtboard id="04-ganaderia" label="04 · Ganadería" width={1080} height={1080}>
+          <Ganaderia />
+        </DCArtboard>
+        <DCArtboard id="05-clima" label="05 · Clima" width={1080} height={1080}>
+          <Clima />
+        </DCArtboard>
+        <DCArtboard id="06-cta" label="06 · CTA" width={1080} height={1080}>
+          <CTA />
+        </DCArtboard>
+      </DCSection>
+    </DesignCanvas>
+  );
+}
+
+ReactDOM.createRoot(document.getElementById('root')).render(<App />);
+</script>
+</body>
+</html>
